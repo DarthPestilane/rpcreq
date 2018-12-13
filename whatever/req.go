@@ -18,3 +18,7 @@ func (*Req) Multiply(arg Arg, result *Result) error {
 	*result = Result(arg.A * arg.B)
 	return nil
 }
+
+func Method(m string) string {
+	return "Req." + m
+}
